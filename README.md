@@ -51,7 +51,7 @@ Feel free to reach out to any of the team members for collaboration or queries.
 
 ## 🎉 Acknowledgments
 
-We would like to thank our professors and mentors for their guidance and support throughout this project.
+We would like to thank our professor, Vinaya Sathyanarayana, and mentors for their guidance and support throughout this project.
 
 ---
 
