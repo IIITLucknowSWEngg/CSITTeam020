@@ -14,14 +14,14 @@
 
 ## 🧭 Table of Contents
 
-- [Project Overview](#project-overview)
-- [Team Members](#team-members)
-- [Team Idea](#team-idea)
-- [Languages and Tools](#languages-and-tools)
-- [GitHub Stats](#github-stats)
-- [Contributing](#contributing)
-- [Contact Us](#contact-us)
-- [Acknowledgments](#acknowledgments)
+- [📌 Project Overview](#-project-overview)
+- [👥 Team Members](#-team-members)
+- [💡 Team Idea](#-team-idea)
+- [🛠️ Languages and Tools](#%EF%B8%8F-languages-and-tools)
+- [👥 Contributors](#-contributors)
+- [🤝 Contributing](#-contributing)
+- [📞 Contact Us](#-contact-us)
+- [🎉 Acknowledgments](#-acknowledgments)
 
 ---
 
@@ -36,6 +36,8 @@ Our project focuses on developing a technology-driven platform that offers:
 - **Guest Reviews and Ratings**
 - **Partner Hotel Management Interface**
 - **Discounts and Offers for Premium Members**
+
+This project is aimed at creating a seamless experience for both users and hotel partners, enhancing hospitality services by providing real-time features similar to OYO.
 
 ---
 
@@ -52,43 +54,35 @@ Our project focuses on developing a technology-driven platform that offers:
 
 ## 💡 Team Idea
 
-Our project aims to create a **technology-driven platform for managing affordable hotel and home stays**, similar to OYO. The core focus is on:
+Our project aims to build a **technology-driven platform for managing affordable hotel and home stays**, inspired by OYO. Key goals include:
 
 - Efficient **inventory management** for partner hotels.
 - **Real-time communication** for pricing and availability updates.
-- Seamless **booking** and **guest feedback** integration.
+- Streamlined **booking** and **guest feedback** integration.
+- An intuitive **partner hotel management interface** for seamless hotel administration.
 
 ---
 
 ## 🛠️ Languages and Tools
 
-We are using a range of technologies to make this project efficient and scalable:
+We are using a combination of modern technologies to develop a scalable and user-friendly platform:
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
----
-<!--
-## 📊 GitHub Stats
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=IIITLucknowSWEngg&repo=CSITTeam020&layout=compact)
-![GitHub Repo stars](https://img.shields.io/github/stars/IIITLucknowSWEngg/CSITTeam020?style=social)
-![GitHub forks](https://img.shields.io/github/forks/IIITLucknowSWEngg/CSITTeam020?style=social)
+These tools empower us to develop features such as real-time updates, efficient database management, and responsive UI components.
 
 ---
--->
 
 ## 👥 Contributors
 
-Thanks to these wonderful people ✨:
+Thanks to these wonderful people for their contributions ✨:
 
 <a href="https://github.com/IIITLucknowSWEngg/CSITTeam020/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=IIITLucknowSWEngg/CSITTeam020" />
 </a>
-
-Contributions of any kind are welcome!
 
 ---
 
@@ -96,26 +90,31 @@ Contributions of any kind are welcome!
 
 We welcome contributions from everyone! Here’s how you can help:
 
-1. Fork the repository.
-2. Create a branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
+1. **Fork** the repository.
+2. **Create a branch** (`git checkout -b feature/AmazingFeature`).
+3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`).
+4. **Push to the branch** (`git push origin feature/AmazingFeature`).
+5. **Open a Pull Request**.
 
-Please make sure to update tests as appropriate.
+Make sure to update any relevant tests. Contributions of all types are appreciated!
 
 ---
 
 ## 📞 Contact Us
 
-Feel free to reach out to any of the team members for collaboration or queries.
+Feel free to reach out to any of the team members for collaboration, ideas, or queries:
+
+- Abhay Prasad: abhayprasad9494@gmail.com
+- Parth Bandwal: parthbandwal3@gmail.com
+- Satyam Gupta: satyamgupta0812@gmail.com
+- Prakash Kumar: 9101prakashkumar@gmail.com
 
 ---
 
 ## 🎉 Acknowledgments
 
-We would like to thank our professors and mentors for their guidance and support throughout this project.
+We would like to extend our gratitude to our professor, Vinaya Sathyanarayana, mentors, and the open-source community for their guidance, inspiration, and support throughout this project.
 
 ---
 
-*Crafted with passion by Innov8 Coders* 
+*Crafted with passion by Innov8 Coders*
