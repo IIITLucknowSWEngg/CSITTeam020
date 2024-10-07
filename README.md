@@ -118,4 +118,4 @@ We would like to thank our professors and mentors for their guidance and support
 
 ---
 
-*Crafted with passion by Innov8 Coders* 🎶
+*Crafted with passion by Innov8 Coders* 
