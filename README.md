@@ -4,38 +4,37 @@
 
 ---
 
-![Contributors](https://img.shields.io/github/contributors/Innov8Coders/OYOClone)
-![Forks](https://img.shields.io/github/forks/Innov8Coders/OYOClone?style=social)
-![Stargazers](https://img.shields.io/github/stars/Innov8Coders/OYOClone?style=social)
-![Issues](https://img.shields.io/github/issues/Innov8Coders/OYOClone)
-![MIT License](https://img.shields.io/github/license/Innov8Coders/OYOClone)
+![Contributors](https://img.shields.io/github/contributors/IIITLucknowSWEngg/CSITTeam020)
+![Forks](https://img.shields.io/github/forks/IIITLucknowSWEngg/CSITTeam020?style=social)
+![Stargazers](https://img.shields.io/github/stars/IIITLucknowSWEngg/CSITTeam020?style=social)
+![Issues](https://img.shields.io/github/issues/IIITLucknowSWEngg/CSITTeam020)
+![MIT License](https://img.shields.io/github/license/IIITLucknowSWEngg/CSITTeam020)
 
 ---
 
 ## 🧭 Table of Contents
 
-- [Project Overview](#-project-overview)
-- [Team Members](#-team-members)
-- [Team Idea](#-team-idea)
-- [Languages and Tools](#-languages-and-tools)
-- [GitHub Stats](#-github-stats)
-- [Contributing](#-contributing)
-- [Contact Us](#-contact-us)
-- [Acknowledgments](#-acknowledgments)
+- [Project Overview](#project-overview)
+- [Team Members](#team-members)
+- [Team Idea](#team-idea)
+- [Languages and Tools](#languages-and-tools)
+- [GitHub Stats](#github-stats)
+- [Contributing](#contributing)
+- [Contact Us](#contact-us)
+- [Acknowledgments](#acknowledgments)
 
 ---
 
 ## 📌 Project Overview
 
-Our project focuses on developing a technology-driven platform that offers:
+Our project focuses on developing a feature-rich **music streaming platform** similar to Spotify, which includes:
 
 - **User Registration and Authentication**
-- **Hotel and Home Listings**
-- **Real-Time Availability and Pricing Updates**
-- **Booking and Payment Integration**
-- **Guest Reviews and Ratings**
-- **Partner Hotel Management Interface**
-- **Discounts and Offers for Premium Members**
+- **Music Streaming**
+- **Playlist Creation and Management**
+- **Search and Discovery of Music**
+- **Offline Listening for Premium Users**
+- **Artist Profiles and Content Upload**
 
 ---
 
@@ -52,15 +51,18 @@ Our project focuses on developing a technology-driven platform that offers:
 
 ## 💡 Team Idea
 
-Our project aims to create a **technology-driven platform for managing affordable hotel and home stays**, similar to OYO. The core focus is on:
+Our goal is to replicate the core functionalities of a **music streaming platform**, focusing on:
 
-- Efficient **inventory management** for partner hotels.
-- **Real-time communication** for pricing and availability updates.
-- Seamless **booking** and **guest feedback** integration.
+- **Seamless music playback** with playlists and libraries.
+- **User-friendly interfaces** for users and artists.
+- **Real-time search** for new tracks and artists.
+- **Premium features** like offline music availability.
 
 ---
 
 ## 🛠️ Languages and Tools
+
+We are using a range of technologies to make this project efficient and scalable:
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
@@ -71,9 +73,21 @@ Our project aims to create a **technology-driven platform for managing affordabl
 
 ## 📊 GitHub Stats
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Innov8Coders&layout=compact)
-![GitHub Repo stars](https://img.shields.io/github/stars/Innov8Coders/OYOClone?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Innov8Coders/OYOClone?style=social)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=IIITLucknowSWEngg&layout=compact)
+![GitHub Repo stars](https://img.shields.io/github/stars/IIITLucknowSWEngg/CSITTeam020?style=social)
+![GitHub forks](https://img.shields.io/github/forks/IIITLucknowSWEngg/CSITTeam020?style=social)
+
+---
+
+## 👥 Contributors
+
+Thanks to these wonderful people ✨:
+
+<a href="https://github.com/IIITLucknowSWEngg/CSITTeam020/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=IIITLucknowSWEngg/CSITTeam020" />
+</a>
+
+Contributions of any kind are welcome!
 
 ---
 
@@ -86,6 +100,8 @@ We welcome contributions from everyone! Here’s how you can help:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
 4. Push to the branch (`git push origin feature/AmazingFeature`).
 5. Open a Pull Request.
+
+Please make sure to update tests as appropriate.
 
 ---
 
@@ -101,4 +117,4 @@ We would like to thank our professors and mentors for their guidance and support
 
 ---
 
-*Crafted with precision by Innov8 Coders* 🛏️
+*Crafted with passion by Innov8 Coders* 🎶
