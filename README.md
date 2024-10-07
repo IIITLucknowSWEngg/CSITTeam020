@@ -1,6 +1,6 @@
 # 🏨 CSITTeam020 - OYO Clone 🏨
 
-**Team Innov8 Coders**
+**Team: Innov8 Coders**
 
 ---
 
@@ -113,7 +113,7 @@ Feel free to reach out to any of the team members for collaboration, ideas, or q
 
 ## 🎉 Acknowledgments
 
-We would like to extend our gratitude to our professor, Vinaya Sathyanarayana, mentors, and the open-source community for their guidance, inspiration, and support throughout this project.
+We would like to extend our gratitude to our professor, **Vinaya Sathyanarayana**, mentors, and the open-source community for their guidance, inspiration, and support throughout this project.
 
 ---
 
