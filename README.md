@@ -70,7 +70,7 @@ We are using a range of technologies to make this project efficient and scalable
 ![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
 ---
-
+<!--
 ## 📊 GitHub Stats
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=IIITLucknowSWEngg&repo=CSITTeam020&layout=compact)
@@ -78,6 +78,7 @@ We are using a range of technologies to make this project efficient and scalable
 ![GitHub forks](https://img.shields.io/github/forks/IIITLucknowSWEngg/CSITTeam020?style=social)
 
 ---
+-->
 
 ## 👥 Contributors
 
