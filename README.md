@@ -1,10 +1,27 @@
-# 🏨 OYO Clone - CSITTeam020 🏨
+# 🏨 CSITTeam020 - OYO Clone 🏨
 
 **Team Innov8 Coders**
 
 ---
 
-Welcome to **Innov8 Coders** project repository for our **OYO Clone**. This project aims to replicate key features of OYO, offering users the ability to book affordable and quality accommodations seamlessly.
+![Contributors](https://img.shields.io/github/contributors/Innov8Coders/OYOClone)
+![Forks](https://img.shields.io/github/forks/Innov8Coders/OYOClone?style=social)
+![Stargazers](https://img.shields.io/github/stars/Innov8Coders/OYOClone?style=social)
+![Issues](https://img.shields.io/github/issues/Innov8Coders/OYOClone)
+![MIT License](https://img.shields.io/github/license/Innov8Coders/OYOClone)
+
+---
+
+## 🧭 Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Team Members](#-team-members)
+- [Team Idea](#-team-idea)
+- [Languages and Tools](#-languages-and-tools)
+- [GitHub Stats](#-github-stats)
+- [Contributing](#-contributing)
+- [Contact Us](#-contact-us)
+- [Acknowledgments](#-acknowledgments)
 
 ---
 
@@ -43,6 +60,35 @@ Our project aims to create a **technology-driven platform for managing affordabl
 
 ---
 
+## 🛠️ Languages and Tools
+
+![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+
+---
+
+## 📊 GitHub Stats
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Innov8Coders&layout=compact)
+![GitHub Repo stars](https://img.shields.io/github/stars/Innov8Coders/OYOClone?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Innov8Coders/OYOClone?style=social)
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from everyone! Here’s how you can help:
+
+1. Fork the repository.
+2. Create a branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
+
+---
+
 ## 📞 Contact Us
 
 Feel free to reach out to any of the team members for collaboration or queries.
@@ -51,13 +97,7 @@ Feel free to reach out to any of the team members for collaboration or queries.
 
 ## 🎉 Acknowledgments
 
-We would like to thank our professor, Vinaya Sathyanarayana, and mentors for their guidance and support throughout this project.
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+We would like to thank our professors and mentors for their guidance and support throughout this project.
 
 ---
 
