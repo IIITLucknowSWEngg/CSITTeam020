@@ -1,10 +1,10 @@
-# 🏨 CSITTeam020 - OYO Clone 🏨
+# 🏨 OYO Clone - CSITTeam020 🏨
 
 **Team Innov8 Coders**
 
 ---
 
-Welcome to **Innov8 Coders'** project repository for our **OYO Clone**. This project aims to replicate key features of OYO, offering users the ability to book affordable and quality accommodations seamlessly.
+Welcome to **Innov8 Coders** project repository for our **OYO Clone**. This project aims to replicate key features of OYO, offering users the ability to book affordable and quality accommodations seamlessly.
 
 ---
 
