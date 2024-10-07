@@ -27,14 +27,15 @@
 
 ## 📌 Project Overview
 
-Our project focuses on developing a feature-rich **music streaming platform** similar to Spotify, which includes:
+Our project focuses on developing a technology-driven platform that offers:
 
 - **User Registration and Authentication**
-- **Music Streaming**
-- **Playlist Creation and Management**
-- **Search and Discovery of Music**
-- **Offline Listening for Premium Users**
-- **Artist Profiles and Content Upload**
+- **Hotel and Home Listings**
+- **Real-Time Availability and Pricing Updates**
+- **Booking and Payment Integration**
+- **Guest Reviews and Ratings**
+- **Partner Hotel Management Interface**
+- **Discounts and Offers for Premium Members**
 
 ---
 
@@ -51,12 +52,11 @@ Our project focuses on developing a feature-rich **music streaming platform** si
 
 ## 💡 Team Idea
 
-Our goal is to replicate the core functionalities of a **music streaming platform**, focusing on:
+Our project aims to create a **technology-driven platform for managing affordable hotel and home stays**, similar to OYO. The core focus is on:
 
-- **Seamless music playback** with playlists and libraries.
-- **User-friendly interfaces** for users and artists.
-- **Real-time search** for new tracks and artists.
-- **Premium features** like offline music availability.
+- Efficient **inventory management** for partner hotels.
+- **Real-time communication** for pricing and availability updates.
+- Seamless **booking** and **guest feedback** integration.
 
 ---
 
