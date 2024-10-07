@@ -73,7 +73,7 @@ We are using a range of technologies to make this project efficient and scalable
 
 ## 📊 GitHub Stats
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=IIITLucknowSWEngg&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=IIITLucknowSWEngg&repo=CSITTeam020&layout=compact)
 ![GitHub Repo stars](https://img.shields.io/github/stars/IIITLucknowSWEngg/CSITTeam020?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/IIITLucknowSWEngg/CSITTeam020?style=social)
 
