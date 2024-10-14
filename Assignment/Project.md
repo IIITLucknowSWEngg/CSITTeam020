@@ -1,6 +1,3 @@
-Here’s the OYO clone project description formatted similarly to your Codeforces Clone template:
-
----
 
 # *Project Description - OYO Clone*
 
