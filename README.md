@@ -1,4 +1,4 @@
-# 🏨 CSITTeam020 - OYO Clone 🏨
+# 🏨 CSITTeam020 - OYO 🏨
 
 **Team: Innov8 Coders**
 
