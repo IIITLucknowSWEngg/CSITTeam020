@@ -31,4 +31,3 @@ The OYO Clone is a web-based platform designed to facilitate the booking of acco
 
 ---
 
-Feel free to make any adjustments as needed!
