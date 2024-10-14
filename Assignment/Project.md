@@ -1,10 +1,5 @@
 
 
-*File Name*: Project.MD  
-*Purpose*: To describe the project scope, defining what is included and excluded.
-
----
-
 # *Project Description - OYO Clone*
 
 ## *1. Project Overview*  
