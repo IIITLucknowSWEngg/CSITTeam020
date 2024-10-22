@@ -143,9 +143,6 @@ incorporated to safeguard user information and maintain trust.
 - The staff provides the guest with Iman invoice or receipt.
 - The activity ends with the guest leaving the hotel.
 
-## Flowchart for Oyo Booking System
-
-![the picture](./UML%20Diagrams/Activity_Diagram.png)
 
 ## 8. Deployment and Maintenance:
 
