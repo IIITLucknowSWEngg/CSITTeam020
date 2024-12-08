@@ -1,8 +1,8 @@
 
-# *Project Description - OYO Clone*
+# *Project Description - OYO Competitor*
 
 ## *1. Project Overview*
-The OYO Clone is a web-based platform designed to facilitate the booking of accommodations. This project aims to emulate the functionalities of OYO, a popular hotel booking service. Users will be able to search for hotels, view detailed information, and make reservations seamlessly. The platform will include features for hotel owners to manage their listings and bookings, providing a comprehensive solution for both customers and hotel operators. The user-friendly interface and efficient backend will ensure a smooth experience for all users.
+The OYO Competitor is a web-based platform designed to facilitate the booking of accommodations. This project aims to emulate the functionalities of OYO, a popular hotel booking service. Users will be able to search for hotels, view detailed information, and make reservations seamlessly. The platform will include features for hotel owners to manage their listings and bookings, providing a comprehensive solution for both customers and hotel operators. The user-friendly interface and efficient backend will ensure a smooth experience for all users.
 
 ## *2. Project Scope*
 ### *2.1 Included Features*
