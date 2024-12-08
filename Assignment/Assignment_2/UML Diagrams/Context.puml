@@ -1,0 +1,26 @@
+@startuml
+
+title OYO Context Diagram
+
+actor User as "User"
+rectangle OYO as "OYO Platform"
+actor Hotel as "Hotels"
+database Payment as "Payment Gateway"
+cloud ThirdParty as "Third-Party Services"
+User --> OYO: Search and Book Hotels
+OYO --> User: Booking Confirmation
+User --> OYO: Manage Booking
+OYO --> User: Booking Details
+User --> OYO: Provide Feedback
+OYO --> User: Feedback Response
+User --> OYO: Report Issues
+OYO --> User: Issue Resolution
+OYO --> Hotel: Hotel Information
+Hotel --> OYO: Room Availability
+Hotel --> OYO: Booking Confirmation
+OYO --> Payment: Payment Request
+Payment --> OYO: Payment Confirmation
+OYO --> ThirdParty: API Integration
+ThirdParty --> OYO: Data Exchange
+
+@enduml

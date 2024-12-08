@@ -1,0 +1,21 @@
+@startuml
+
+actor User as user #lightblue
+
+rectangle "OYO System" {
+user -- [OYO Web App] : Uses
+[OYO Web App] -- (OYO Backend) : Sends requests
+[OYO Web App] -- (OYO Website) : Sends requests
+(OYO Backend) -- (Hotel Database) : Manages
+(OYO Backend) -- (User Database) : Manages
+(OYO Backend) -- (Payment Gateway) : Handles payments
+(OYO Website) -- (Hotel Database) : Manages
+(OYO Website) -- (User Database) : Manages
+(OYO Backend) -- (OYO Cloud) : Deploys
+(Hotel Database) -- [Database Server] : Stores data
+(User Database) -- [Database Server] : Stores data
+(Payment Gateway) -- [Payment Server] : Processes payments
+[Payment Server] -- (Bank) : Connects
+}
+
+@enduml
