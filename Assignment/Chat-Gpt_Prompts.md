@@ -76,13 +76,21 @@ This structure ensures clarity and alignment with user expectations.
 A Cross-Reference Matrix (CRM) ensures traceability between requirements and project elements. Here's what it should include:
 
 Requirement ID: Unique identifier for each requirement.
+
 Requirement Description: Brief explanation of the requirement.
+
 Linked Elements: Connections to:
+
 Design Components (e.g., diagrams, features).
+
 Test Cases verifying the requirement.
+
 Code Modules implementing the requirement.
+
 Related Documents (e.g., specifications, guides).
+
 Status: Current state (e.g., Implemented, Verified, Pending).
+
 Priority (Optional): Importance level (e.g., High, Medium, Low).
 
 **5. What should be included in SRS file**
