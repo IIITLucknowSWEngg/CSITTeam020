@@ -63,5 +63,3 @@ admin --> UC_Manage_Offers
 ```
 
 ---
-
-These diagrams describe the primary functionalities of an OYO-like application for both **viewers (users)** and **admins**. Let me know if you'd like to visualize these diagrams or if additional details are needed!
