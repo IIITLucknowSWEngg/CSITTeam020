@@ -15,7 +15,7 @@ Certainly! Here’s a overview of what stakeholders should include in your proje
 
 End Users:
 
-Role: People who will use the product (e.g., an Amazon Prime Video clone).
+Role: People who will use the product.
 Focus: Easy-to-use interface, content variety, high-quality streaming, and personalization.
 
 Developers:
