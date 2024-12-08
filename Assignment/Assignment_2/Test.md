@@ -118,10 +118,10 @@ resources become available, or the project priorities change.
 
 The testing activities will be conducted according to the following schedule:
 
-* Test Planning : May 25,2023 – June 1,2023
-* Test Design and Preparation: June 2,2023 – June 5,2023
-* Test Execution: June 5,2023 – June 9,2023
-* Test Reporting and Closure: June 10,2023 – June 12,2023.
+* Test Planning : Aug 25,2024 – Sep 1,2024
+* Test Design and Preparation: Sep 2,2024 – Oct 5,2024
+* Test Execution:  Nov 5,2024 – Nov 9,2024
+* Test Reporting and Closure: Dec 10,2024 – Dec 12,2024.
 
 ### Test Environment/ Ressources:
 
