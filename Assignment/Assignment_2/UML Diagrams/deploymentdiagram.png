@@ -1,1 +1,73 @@
+@startuml
+skinparam defaultFontName "Arial"
+skinparam rectangle {
+    BackgroundColor<<Node>> #f0f0f0
+    BackgroundColor<<Container>> #e8e8ff
+    BackgroundColor<<Database>> #ffe8e8
+}
+
+title Deployment Diagram - OYO Room Booking System
+
+rectangle "Client Tier" <<Node>> {
+    rectangle "Web Browser" <<Node>> {
+        rectangle "Web App\nReact" <<Container>> as WebApp
+    }
+    rectangle "Mobile Device" <<Node>> {
+        rectangle "Mobile App\nFlutter" <<Container>> as MobileApp
+    }
+}
+
+rectangle "API Tier" <<Node>> {
+    rectangle "API Cluster\nLoad Balanced" <<Node>> {
+        rectangle "API Gateway\nExpress.js" <<Container>> as APIGateway
+        rectangle "Booking Service\nNode.js" <<Container>> as BookingService
+        rectangle "Authentication Service\nOAuth2/OpenID" <<Container>> as AuthService
+        rectangle "Payment Service\nNode.js" <<Container>> as PaymentService
+    }
+}
+
+rectangle "Data Tier" <<Node>> {
+    rectangle "Database Cluster" <<Node>> {
+        database "User Database\nAmazon RDS" <<Database>> as UserDB
+        database "Booking Database\nAmazon RDS" <<Database>> as BookingDB
+        database "Hotel Database\nDynamoDB" <<Database>> as HotelDB
+    }
+}
+
+rectangle "Storage Tier" <<Node>> {
+    rectangle "Object Storage" <<Node>> {
+        rectangle "Media Storage\nAmazon S3" <<Container>> as MediaStore
+    }
+    rectangle "CDN Nodes" <<Node>> {
+        rectangle "CDN\nAWS CloudFront" <<Container>> as CDN
+    }
+}
+
+rectangle "Monitoring and Security" <<Node>> {
+    rectangle "Logging\nAWS CloudWatch" <<Container>> as Logging
+    rectangle "Metrics\nPrometheus/Grafana" <<Container>> as Metrics
+    rectangle "Web Application Firewall (WAF)\nAWS WAF" <<Container>> as Security
+}
+
+' Relationships
+WebApp -[hidden]-> MobileApp
+WebApp --> APIGateway : "Sends requests\nHTTPS"
+MobileApp --> APIGateway : "Sends requests\nHTTPS"
+APIGateway --> AuthService : "Authenticates users\nOAuth2"
+APIGateway --> BookingService : "Routes to\nREST"
+APIGateway --> PaymentService : "Processes payments\nREST"
+BookingService --> BookingDB : "Reads/Writes\nSQL"
+BookingService --> HotelDB : "Reads/Writes\nDynamoDB"
+PaymentService --> UserDB : "Verifies user payment details\nSQL"
+MediaStore --> CDN : "Serves to\nHTTPS"
+WebApp --> CDN : "Loads images and assets\nHTTPS"
+MobileApp --> CDN : "Loads images and assets\nHTTPS"
+
+' Error handling
+APIGateway --> Logging : "Logs errors and invalid requests\nHTTPS"
+APIGateway --> Security : "Protects against request floods\nWAF Rules"
+BookingService --> Logging : "Logs booking errors\nHTTPS"
+PaymentService --> Logging : "Logs payment errors\nHTTPS"
+
+@enduml
 
