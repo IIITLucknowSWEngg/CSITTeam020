@@ -1,4 +1,4 @@
-# OYO Clone Project: Cross-Reference Matrix
+# OYO Clone Competitor: Cross-Reference Matrix
 
 | **Component**            | **Features/Tasks**                                              | **Frontend** | **Backend** | **Database** | **APIs**      | **Testing**    |
 |--------------------------|-----------------------------------------------------------------|--------------|-------------|--------------|---------------|----------------|
