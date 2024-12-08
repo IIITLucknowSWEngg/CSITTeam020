@@ -7,8 +7,8 @@
 | Development Team           | 3.3          | Booking Process                  | 3.3          | Booking and Reservation Management   |
 | Development Team           | 3.4          | Payment Integration              | 3.4          | Payment Gateway Integration          |
 | Development Team           | 3.5          | Notifications                    | 4.2          | Communication Interfaces             |
-| UI/UX Designers            | 4.1          | Usability and Design             | 5.1          | User Interface and Usability         |
-| UI/UX Designers            | 3.2          | Search and Filters               | 5.1          | User Interface and Usability         |
+| UI/UX Designers            | 4.1          | Usability and Design             | 5.5          | User Interface and Usability         |
+| UI/UX Designers            | 3.2          | Search and Filters               | 5.5          | User Interface and Usability         |
 | Quality Assurance (QA) Team| 3.3          | Booking Process                  | 3.3          | Booking and Reservation Management   |
 | Quality Assurance (QA) Team| 3.5          | Notifications                    | 4.2          | Communication Interfaces             |
 | System Architects          | 4.3          | Scalability                      | 5.4          | System Scalability                   |
