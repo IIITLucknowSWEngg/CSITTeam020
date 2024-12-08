@@ -6,7 +6,7 @@
  ```
 
 @startuml
-title Error Case Diagram - OYO Clone
+title Error Case Diagram - OYO Competitor
 
 actor "Customer" as customer
 actor "Hotel Manager" as hotelManager
