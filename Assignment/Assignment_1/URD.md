@@ -53,33 +53,34 @@ The OYO competitor is a hotel booking platform that allows users to search for a
   - Password recovery through email or SMS.
   - Support for secure SSO using Google or Facebook accounts.
 
-### 3.2 Room Booking
+### 3.2 Search and Filters
 - **Description**: Users can search for and book rooms based on location, dates, and preferences.
 - **Functional Requirements**:
   - Filters for location, price, amenities, and ratings.
-  - Secure payment gateway for processing payments.
+
+### 3.3 Booking Process
+- **Description**: Users can manage bookings, including cancellations and refunds.
+- **Functional Requirements**:
   - Confirmation emails and receipts for successful bookings.
   - Easy cancellation with refund processing based on policy.
 
-### 3.3 Property Registration
-- **Description**: Hotel partners can register their properties and manage listings.
+### 3.4 Payment Integration
+- **Description**: Secure payment gateway integration for processing payments.
 - **Functional Requirements**:
-  - Support for uploading room photos, descriptions, and amenities.
-  - Price and availability management.
-  - Approval process for new listings.
+  - Support for major payment methods, including credit cards and wallets.
+  - Secure and encrypted transactions.
 
-### 3.4 Receipt Management
-- **Description**: Users can download receipts for bookings.
+### 3.5 Notifications
+- **Description**: Users receive notifications for important updates.
 - **Functional Requirements**:
-  - Clear breakdown of booking details, taxes, and total costs.
-  - Downloadable in PDF or printable formats.
+  - Booking confirmation, cancellations, and payment status.
+  - Multichannel notifications via email, SMS, and in-app alerts.
 
-### 3.5 Support and Assistance
-- **Description**: Users can contact support for booking issues or queries.
+### 3.6 API Integration
+- **Description**: Integration for property updates and analytics.
 - **Functional Requirements**:
-  - Accessible via a “Contact Support” button.
-  - Support through chat, email, and phone.
-  - Automated ticket acknowledgment and resolution tracking.
+  - Enable third-party APIs for property synchronization.
+  - Support analytics tools for insights into booking trends.
 
 ---
 
