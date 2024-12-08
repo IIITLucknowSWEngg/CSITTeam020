@@ -7,61 +7,101 @@ left to right direction
 title OYO Competitor - Abuse Case Diagram
 
 actor Attacker
+
 actor FraudulentUser as "Fraudulent User"
+
 actor MaliciousHost as "Malicious Host"
+
 actor BotNetwork as "Bot Network"
 
 usecase "SQL Injection" as SQLInjection
+
 usecase "Cross-Site Scripting (XSS)" as XSS
+
 usecase "Phishing" as Phishing
+
 usecase "Data Breach Attempt" as DataBreach
+
 usecase "Credential Sharing Abuse" as CredentialSharing
+
 usecase "Fake Bookings" as FakeBookings
+
 usecase "Payment Fraud" as PaymentFraud
+
 usecase "Unauthorized Property Hosting" as UnauthorizedHosting
+
 usecase "Property Overbooking" as Overbooking
+
 usecase "Fake Reviews/Engagement" as FakeEngagement
+
 usecase "Automated Fake Engagement" as FakeEngagementBots
+
 usecase "Scraping Property Metadata" as ScrapingMetadata
+
 usecase "Content Flooding" as ContentFlooding
+
 usecase "API Exploitation" as APIExploitation
+
 usecase "Injection of Malicious Code" as MaliciousCode
 
 usecase "Trust Loss" as TrustLoss
+
 usecase "Revenue Loss" as RevenueLoss
+
 usecase "Data Compromise" as DataCompromise
 
 Attacker --> SQLInjection
+
 Attacker --> XSS
+
 Attacker --> Phishing
+
 Attacker --> DataBreach
 
 FraudulentUser --> CredentialSharing
+
 FraudulentUser --> FakeBookings
+
 FraudulentUser --> PaymentFraud
+
 FraudulentUser --> FakeEngagement
 
 BotNetwork --> FakeEngagementBots
+
 BotNetwork --> ScrapingMetadata
+
 BotNetwork --> ContentFlooding
 
 MaliciousHost --> UnauthorizedHosting
+
 MaliciousHost --> Overbooking
+
 MaliciousHost --> FakeEngagement
+
 MaliciousHost --> PaymentFraud
 
 SQLInjection --> TrustLoss
+
 XSS --> TrustLoss
+
 DataBreach --> DataCompromise
 
 CredentialSharing --> RevenueLoss
+
 FakeBookings --> RevenueLoss
+
 PaymentFraud --> RevenueLoss
+
 UnauthorizedHosting --> RevenueLoss
+
 Overbooking --> TrustLoss
+
 FakeEngagement --> TrustLoss
+
 FakeEngagementBots --> TrustLoss
+
 ScrapingMetadata --> DataCompromise
+
 APIExploitation --> DataCompromise
 
 @enduml
