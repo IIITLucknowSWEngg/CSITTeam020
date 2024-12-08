@@ -3,12 +3,13 @@
 ## 1. Introduction
 
 ### 1.1 Purpose
-This SRS document outlines the functional and non-functional requirements for the OYO hotel booking system. It serves as a guide for developers and stakeholders, ensuring the project is built to meet user needs efficiently and effectively.
+This SRS document outlines the functional and non-functional requirements for the OYO hotel booking system. It aligns closely with the user needs outlined in the URD, ensuring efficient development, testing, and stakeholder satisfaction.
 
 ### 1.2 Scope
-The OYO clone will enable customers to search and book hotel rooms through an intuitive platform, while hotel managers can manage inventory, bookings, and customer interactions. The platform will include features like payment processing, real-time updates, reporting, and multilingual support.
+The OYO clone allows customers to search and book hotel rooms while enabling hotel managers to manage inventory, bookings, and customer interactions. Key features include secure payments, real-time updates, notifications, and reporting. The document follows the cross-referenced URD to maintain consistency.
 
 ### 1.3 Definitions, Acronyms, and Abbreviations
+- **URD**: User Requirements Document
 - **SRS**: Software Requirements Specification
 - **API**: Application Programming Interface
 - **NFR**: Non-Functional Requirement
@@ -18,6 +19,7 @@ The OYO clone will enable customers to search and book hotel rooms through an in
 ### 1.4 References
 - IEEE Std 830-1998 for SRS
 - SWEBOK v3.0
+- Cross-Reference Matrix
 - OYO User Requirements Document
 
 ---
@@ -25,135 +27,125 @@ The OYO clone will enable customers to search and book hotel rooms through an in
 ## 2. Overall Description
 
 ### 2.1 Product Perspective
-The OYO booking system will function as a web-based and mobile application. It will integrate with existing hotel management systems and third-party APIs (e.g., payment gateways, mapping services) to provide seamless room bookings, payments, and inventory management.
+The OYO system is a web-based and mobile application integrating third-party services (e.g., payment gateways, mapping tools) for seamless room bookings, payment processing, and inventory management.
 
 ### 2.2 Product Features
-- User registration and secure login
-- Room search and booking functionality
-- Payment and billing processing
-- Inventory management for hotel managers
-- Reporting and analytics for operational insights
-- Support for multilingual interfaces
+- **User Authentication and Management**: Secure user registration and login.
+- **Room Search and Filtering**: Search by location, dates, price, and amenities.
+- **Booking and Reservation Management**: Real-time room availability and booking.
+- **Payment Gateway Integration**: Secure, PCI DSS-compliant payment processing.
+- **Communication Interfaces**: Notifications for booking confirmations and updates.
+- **Room Listings and Descriptions**: Detailed hotel and room information.
 
 ### 2.3 User Classes and Characteristics
-- **Customers**: Individuals booking hotels, requiring a user-friendly interface and secure payment options.
-- **Hotel Managers**: Manage rooms, pricing, bookings, and staff interactions.
-- **Admins**: Oversee platform operations, resolve disputes, and ensure compliance.
-- **Support Staff**: Provide customer and technical assistance.
+- **Guests**: Simplified search, booking, and secure payment features.
+- **Hotel Managers**: Tools for managing room inventory, pricing, and customer interactions.
+- **Admins**: Platform oversight, reporting, and compliance.
+- **System Architects**: Ensuring scalability and secure data handling.
 
 ### 2.4 Operating Environment
-- Accessible on modern web browsers (Chrome, Safari, Firefox) and mobile platforms (iOS, Android).
-- Backend hosted on scalable cloud infrastructure (e.g., AWS, Azure).
+- Modern web browsers (Chrome, Safari, Firefox).
+- Mobile platforms (iOS, Android).
+- Backend hosted on scalable cloud infrastructure.
 
 ### 2.5 Design and Implementation Constraints
-- Compatibility with various devices and screen resolutions.
-- Adherence to data security standards (e.g., PCI DSS, GDPR).
-- High availability during peak usage (e.g., holidays).
+- Adherence to PCI DSS and GDPR standards.
+- Scalable to handle peak loads (e.g., holidays).
+- Compatibility with various screen sizes and resolutions.
 
 ### 2.6 Assumptions and Dependencies
-- Users have stable internet access.
-- Integration with reliable third-party services (e.g., payment gateways, email providers).
-- Accurate room details and availability are provided by hotels.
+- Stable internet access for all users.
+- Reliable integration with payment gateways and APIs.
+- Accurate room details provided by hotel managers.
 
 ---
 
 ## 3. System Features
 
-### 3.1 User Registration and Login
-- **Description**: Users can register and log in securely.
+### 3.1 User Authentication and Management
+- **Description**: Users can securely register, log in, and manage their accounts.
 - **Requirements**:
-  - Email and phone verification using OTP.
-  - Password recovery through email or SMS.
-  - Support for SSO via Google or Facebook.
+  - Email and phone verification using OTP (URD 3.1).
+  - Password recovery via email or SMS.
+  - Single Sign-On (SSO) via Google and Facebook.
 
-### 3.2 Room Booking
-- **Description**: Customers can search, filter, and book rooms based on location, dates, and preferences.
+### 3.2 Room Search and Filtering
+- **Description**: Customers can search for rooms based on location, dates, and filters.
 - **Requirements**:
-  - Real-time availability of rooms.
-  - Integration with secure payment gateways.
-  - Confirmation emails for successful bookings.
+  - Advanced search by price range, amenities, and ratings (URD 3.2).
+  - Predictive search suggestions and sort options.
 
-### 3.3 Inventory Management
-- **Description**: Hotel managers can manage room details, pricing, and availability.
+### 3.3 Booking and Reservation Management
+- **Description**: Real-time room availability and booking.
 - **Requirements**:
-  - Real-time updates for room inventory.
-  - Tools for bulk edits and seasonal pricing.
+  - Step-by-step booking process (URD 3.3).
+  - Manage bookings, including modifications and cancellations.
+  - Notifications for booking confirmations.
 
-### 3.4 Payment and Billing
-- **Description**: Customers can securely pay for bookings.
+### 3.4 Payment Gateway Integration
+- **Description**: Customers can securely pay for their bookings.
 - **Requirements**:
+  - Integration with PCI DSS-compliant gateways (URD 3.4).
   - Support for multiple payment methods (credit card, UPI, wallets).
-  - Compliance with PCI DSS standards.
+  - Refund processing for cancellations.
 
-### 3.5 Reporting and Analytics
-- **Description**: Admins and managers can access operational insights.
+### 3.5 Room Listings and Descriptions
+- **Description**: Hotel managers can create and manage detailed room listings.
 - **Requirements**:
-  - Dashboards for revenue, occupancy, and guest behavior.
-  - Exportable reports in common formats (e.g., CSV, PDF).
+  - Photos, descriptions, and amenities for each room (URD 3.2).
+  - Seasonal pricing and availability adjustments.
 
 ---
 
 ## 4. External Interface Requirements
 
 ### 4.1 User Interfaces
-- Intuitive, responsive web interface.
-- Mobile app optimized for iOS and Android.
-- Accessibility features for users with disabilities.
+- Intuitive, responsive design for web and mobile.
+- Accessibility features per WCAG 2.1.
 
-### 4.2 Hardware Interfaces
-- Compatibility with standard devices (e.g., desktops, smartphones).
-- Peripheral support for printers (e.g., receipt generation).
+### 4.2 Communication Interfaces
+- **Description**: Notifications for important user updates.
+- **Requirements**:
+  - SMS and email notifications for confirmations and reminders (URD 3.5).
+  - HTTPS for secure data transmission.
 
 ### 4.3 Software Interfaces
-- Integration with third-party APIs (e.g., Google Maps, Stripe).
-- Backend hosted on a cloud platform (e.g., AWS, Azure).
-
-### 4.4 Communication Interfaces
-- HTTPS for secure data transmission.
-- SMS and email notifications for confirmations and updates.
+- Integration with third-party APIs (e.g., Stripe, Google Maps).
+- API for real-time room availability (URD 3.6).
 
 ---
 
 ## 5. Non-Functional Requirements (NFRs)
 
 ### 5.1 Performance Requirements
-- Response time <2 seconds for most user interactions.
-- Support up to 100,000 concurrent users.
+- Response time <2 seconds.
+- Support for 100,000 concurrent users.
 
 ### 5.2 Security Requirements
-- Data encrypted using TLS and AES-256.
+- Data encryption using TLS and AES-256 (URD 4.2).
 - Two-factor authentication for user accounts.
 
 ### 5.3 Availability and Reliability
-- 99.9% uptime guaranteed.
-- Automatic failover and backup systems in place.
+- 99.9% uptime using redundant cloud servers.
 
-### 5.4 Scalability
-- Horizontal scaling to handle increased traffic during peak seasons.
+### 5.4 System Scalability
+- Horizontal scaling for handling increased traffic (URD 4.3).
 
-### 5.5 Usability
-- Compliance with WCAG 2.1 accessibility guidelines.
-- Multilingual support for global users.
-
-### 5.6 Maintainability
-- Modular design for easy updates and debugging.
-- Continuous monitoring and automated testing.
-
-### 5.7 Compliance
-- GDPR compliance for data privacy.
-- PCI DSS compliance for secure payment processing.
+### 5.5 User Interface and Usability
+- Compliance with WCAG 2.1 for accessibility (URD 4.1).
+- User-friendly navigation for search and booking.
 
 ---
 
 ## 6. Other Requirements
 
 ### 6.1 Localization
-- Region-specific content and language options.
+- Region-specific content and language support (URD 4.4).
 
 ### 6.2 Ethical Considerations
-- Transparent cancellation and refund policies.
+- Transparency in cancellation and refund policies.
 - Mechanisms for reporting inappropriate behavior.
 
 ---
 
-This SRS ensures the OYO clone will meet user expectations and technical standards, creating a reliable and scalable platform for hotel booking and management.
+This SRS incorporates the cross-referenced URD sections to ensure all requirements are met for a scalable, user-friendly, and secure OYO clone platform.
