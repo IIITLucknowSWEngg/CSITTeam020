@@ -13,3 +13,10 @@ the "OYO Booking System," surrounded by entities such as "Customer," "Payment Ga
 The arrows represent information flow between the main system and external entities. The diagram provides a high-level
 view of the system's scope and relationships, facilitating understanding among stakeholders.
 ![the picture](./UML%20Diagrams/Context_Diagram.png)
+
+
+# Deployment diagram
+
+A deployment diagram for the OYO Booking System illustrates the physical architecture of the system, showing how different components are deployed across nodes. The diagram includes key tiers such as the "Client Tier" with web and mobile apps, the "API Tier" with services like API Gateway and Booking Service, and the "Data Tier" with databases for user and booking data. Each node represents a physical or virtual machine, while connections show communication between components. This diagram provides a detailed view of the system's infrastructure, aiding developers and architects in understanding its deployment.
+![the picture](./UML%20Diagrams/deploymentdiagram.png)
+
