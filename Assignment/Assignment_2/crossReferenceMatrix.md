@@ -7,14 +7,14 @@
 | Development Team           | 3.3          | Booking Process                  | 3.3          | Booking and Reservation Management   |
 | Development Team           | 3.4          | Payment Integration              | 3.4          | Payment Gateway Integration          |
 | Development Team           | 3.5          | Notifications                    | 4.2          | Communication Interfaces             |
-| UI/UX Designers            | 4.1          | Usability and Design             | 5.5          | User Interface and Usability         |
+| UI/UX Designers            | 4.3          | Usability              | 5.5          | User Interface and Usability         |
 | UI/UX Designers            | 3.2          | Search and Filters               | 5.5          | User Interface and Usability         |
 | Quality Assurance (QA) Team| 3.3          | Booking Process                  | 3.3          | Booking and Reservation Management   |
 | Quality Assurance (QA) Team| 3.5          | Notifications                    | 4.2          | Communication Interfaces             |
-| System Architects          | 4.3          | Scalability                      | 5.4          | System Scalability                   |
+| System Architects          | 4.4          | Scalability                      | 5.4          | System Scalability                   |
 | Cybersecurity Team         | 4.2          | Security                         | 5.2          | Security Requirements                |
 | Product Managers           | 3.4          | Payment Integration              | 3.4          | Payment Gateway Integration          |
-| Product Managers           | 4.4          | Localization                     | 6.0          | Miscellaneous Requirements           |
+| Product Managers           | 4.6          | Localization                     | 6.0          | Miscellaneous Requirements           |
 | Legal and Compliance Team  | 4.2          | Security                         | 5.2          | Security Requirements                |
 | Marketing and Growth Team  | 3.5          | Notifications                    | 4.2          | Communication Interfaces             |
 | Partner Organizations      | 3.6          | API Integration                  | 4.3          | Software Interfaces                  |
