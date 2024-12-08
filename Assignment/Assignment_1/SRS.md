@@ -272,8 +272,6 @@ The OYO hotel booking system should provide real-time reporting and analytics on
 
 ## 5.1. Performance Requirements
 
-## 5.1. Performance Requirements
-
 1. **Response Time**: The system should respond to user requests within 3 seconds.
 2. **System Capacity**: The system should be able to handle up to 100,000 simultaneous users.
 4. **System Availability**: The OYO hotel booking system should maintain a minimum uptime of 99.9%, ensuring the system is available to users at all times except for scheduled maintenance periods.
