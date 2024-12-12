@@ -250,13 +250,10 @@ Below are the key REST API endpoints:
 This Software Design Description outlines the architecture, modules, database schema, and interfaces required to develop a scalable, secure, and efficient platform for OYO. With modular design and third-party integrations, the system is capable of supporting millions of users and properties efficiently.
 
 
+###  Oyo Design reference : https://bytegoblin.io/blog/system-design-architecture-for-hotel-booking-apps-like-airbnb-oyo.mdx
+### 1)System design reference : [https://www.geeksforgeeks.org/system-design-of-uber-app-uber-system-architecture/
+](https://medium.com/nerd-for-tech/system-design-architecture-for-hotel-booking-apps-like-airbnb-oyo-6efb4f4dddd7)
 
+## Chatgpt prompt
+Create a Software Design Description (SDD) outline for a platform that connects service providers with customers.
 
-
-]
-
-OYO Design Reference
-
-OYO System Architecture Overview
-
-A Detailed System Design for Booking Applications
