@@ -85,7 +85,10 @@ The system operates across Android, iOS, and web platforms, supported by a scala
 
 - **Redis**
 
-  - Caching search results and frequently accessed data.
+ Caching search results and frequently accessed data.
+ 
+-![database pmg](https://github.com/user-attachments/assets/a0a8ce63-90b6-42d3-affa-2e49febdcc99)
+
 
 ---
 
