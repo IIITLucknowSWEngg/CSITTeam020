@@ -1,7 +1,46 @@
 #   C4 Diagrams
 
+ 
 
-# 1. Container diagram
+# 1. Context diagram
+
+A context diagram for an OYO booking system illustrates its interactions with external entities. The main system is
+the "OYO Booking System," surrounded by entities such as "Customer," "Payment Gateway," "Hotel," and "Inventory System."
+The arrows represent information flow between the main system and external entities. The diagram provides a high-level
+view of the system's scope and relationships, facilitating understanding among stakeholders.
+![the picture](./UML%20Diagrams/Context_Diagram.png)
+```
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+LAYOUT_TOP_DOWN()
+title System Context Diagram - OYO Booking System
+
+Person(customer, "Customer", "Searches, books, and manages hotel stays")
+Person(hotelAdmin, "Hotel Admin", "Manages hotel details, room availability, and pricing")
+
+System(oyoBookingSystem, "OYO Booking System", "Online platform for hotel reservations")
+
+System_Ext(paymentGateway, "Payment Gateway", "Processes customer payments securely")
+System_Ext(hotel, "Hotel", "Provides accommodations")
+System_Ext(inventorySystem, "Inventory System", "Tracks room availability and pricing")
+System_Ext(notificationService, "Notification Service", "Sends booking confirmations and alerts")
+System_Ext(analytics, "Analytics", "Tracks user behavior and platform performance")
+System_Ext(reviewSystem, "Review System", "Manages customer feedback and ratings")
+
+Rel(customer, oyoBookingSystem, "Searches, books, and manages stays", "HTTPS")
+Rel(hotelAdmin, oyoBookingSystem, "Manages hotel details and inventory", "HTTPS")
+Rel(oyoBookingSystem, paymentGateway, "Processes payments", "API")
+Rel(oyoBookingSystem, hotel, "Sends booking details", "API")
+Rel(oyoBookingSystem, inventorySystem, "Syncs room availability and pricing", "API")
+Rel(oyoBookingSystem, notificationService, "Sends booking confirmations", "SMTP")
+Rel(oyoBookingSystem, analytics, "Tracks platform usage", "API")
+Rel(oyoBookingSystem, reviewSystem, "Manages customer feedback", "API")
+@enduml
+```
+
+---
+# 2. Container diagram
 
 A container diagram for an OYO booking system shows the software containers that make up the system. The main containers
 are the "Web Frontend," "Booking Service," "Payment Service," and "Database." The "Web Browser" interacts with the "Web
@@ -53,47 +92,8 @@ Rel(bookingService, inventorySystem, "Updates room availability", "API")
 @enduml
 ```
 
---- 
-
-# 2. Context diagram
-
-A context diagram for an OYO booking system illustrates its interactions with external entities. The main system is
-the "OYO Booking System," surrounded by entities such as "Customer," "Payment Gateway," "Hotel," and "Inventory System."
-The arrows represent information flow between the main system and external entities. The diagram provides a high-level
-view of the system's scope and relationships, facilitating understanding among stakeholders.
-![the picture](./UML%20Diagrams/Context_Diagram.png)
-```
-@startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
-
-LAYOUT_TOP_DOWN()
-title System Context Diagram - OYO Booking System
-
-Person(customer, "Customer", "Searches, books, and manages hotel stays")
-Person(hotelAdmin, "Hotel Admin", "Manages hotel details, room availability, and pricing")
-
-System(oyoBookingSystem, "OYO Booking System", "Online platform for hotel reservations")
-
-System_Ext(paymentGateway, "Payment Gateway", "Processes customer payments securely")
-System_Ext(hotel, "Hotel", "Provides accommodations")
-System_Ext(inventorySystem, "Inventory System", "Tracks room availability and pricing")
-System_Ext(notificationService, "Notification Service", "Sends booking confirmations and alerts")
-System_Ext(analytics, "Analytics", "Tracks user behavior and platform performance")
-System_Ext(reviewSystem, "Review System", "Manages customer feedback and ratings")
-
-Rel(customer, oyoBookingSystem, "Searches, books, and manages stays", "HTTPS")
-Rel(hotelAdmin, oyoBookingSystem, "Manages hotel details and inventory", "HTTPS")
-Rel(oyoBookingSystem, paymentGateway, "Processes payments", "API")
-Rel(oyoBookingSystem, hotel, "Sends booking details", "API")
-Rel(oyoBookingSystem, inventorySystem, "Syncs room availability and pricing", "API")
-Rel(oyoBookingSystem, notificationService, "Sends booking confirmations", "SMTP")
-Rel(oyoBookingSystem, analytics, "Tracks platform usage", "API")
-Rel(oyoBookingSystem, reviewSystem, "Manages customer feedback", "API")
-@enduml
-```
 
 ---
-
 # 3. Component diagram
 
 ### i) Customer Features
