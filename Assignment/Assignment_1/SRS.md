@@ -1,4 +1,4 @@
-# Software Requirements Specification (SRS) for OYO Clone
+# Software Requirements Specification (SRS) for OYO Competitor
 
 ## 1. Introduction
 
