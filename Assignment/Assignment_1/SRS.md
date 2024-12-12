@@ -159,8 +159,9 @@ The OYO system is a web-based and mobile application integrating third-party ser
 
 
 # Error Case Diagram
+![Error_Case_Diagram](https://github.com/user-attachments/assets/7ab40919-5830-45c8-a7ab-907e61be8258)
 
-<img width="630" alt="error_case" src="https://github.com/user-attachments/assets/c576679c-3c14-4726-bc97-d6941b2d3f87](https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/Error_Case_Diagram.png">
+
 
 ## Chatgpt prompt
 Create a Software Requirements Specification (SRS) outline for a platform that connects service providers with customers.
