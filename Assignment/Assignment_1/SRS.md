@@ -152,6 +152,30 @@ The OYO system is a web-based and mobile application integrating third-party ser
 - **Appendix A:** Diagrams (System Architecture, Use Case Diagrams)  
 - **Appendix B:** [Cross Reference Matrix(https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/crossReferenceMatrix.md) 
 ---
+
+
+## Appendix A: Use Case Diagram
+---
+## Happy Path Diagram
+Below is the Use Case Diagram for the happy path of the Oyo clone application. It illustrates the primary actors (Guest, Host, and Admin) and their interactions with the system for key processes like User Registration, Room Booking, Payment Processing, Reviews, and Property Management.
+
+The diagram details the step-by-step flow for each interaction, representing the standard sequence of actions without any exception handling (happy path):
+
+## Actors:
+Guest: Registers, searches for rooms, books accommodations, makes payments, and provides reviews.
+
+Host: Manages property details, availability, pricing, and handles booking requests.
+
+Admin: Oversees platform operations, manages users, monitors transactions, and accesses analytics.
+
+
+This diagram highlights the fundamental interactions and processes that enable seamless room booking and management for both guests and hosts within the Oyo system.
+
+![happypathdiagram](https://github.com/user-attachments/assets/bf5b801d-d51f-490e-96fa-9772d8e66375)
+
+
+---
+
 ### ABUSE CASE DIAGRAM
 ![abusecase](https://github.com/user-attachments/assets/c00378f7-1dc5-4c5f-b233-a37779cfb132)
 
