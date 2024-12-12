@@ -94,76 +94,7 @@ Rel(oyoBookingSystem, reviewSystem, "Manages customer feedback", "API")
 
 ---
 
-# 3. Deployment diagram
-
-A deployment diagram for the OYO Booking System illustrates the physical architecture of the system, showing how different components are deployed across nodes. The diagram includes key tiers such as the "Client Tier" with web and mobile apps, the "API Tier" with services like API Gateway and Booking Service, and the "Data Tier" with databases for user and booking data. Each node represents a physical or virtual machine, while connections show communication between components. This diagram provides a detailed view of the system's infrastructure, aiding developers and architects in understanding its deployment.
-![deploymentdiagram](https://github.com/user-attachments/assets/8dffd558-18fc-4ba2-94dd-074d6c7f509c)
-```
-@startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml
-
-LAYOUT_WITH_LEGEND()
-title Deployment Diagram - OYO Booking System
-
-Deployment_Node(client, "Client Tier", "User Devices") {
-    Deployment_Node(browser, "Web Browser") {
-        Container(web, "Web App", "React", "Allows users to search and book hotels")
-    }
-    Deployment_Node(mobile, "Mobile Device") {
-        Container(app, "Mobile App", "React Native", "Provides hotel search and booking on the go")
-    }
-}
-
-Deployment_Node(api, "API Tier", "AWS ECS/Kubernetes") {
-    Deployment_Node(api_cluster, "API Cluster", "Load Balanced") {
-        Container(api_gateway, "API Gateway", "Express.js", "Handles incoming requests and routing")
-        Container(booking_service, "Booking Service", "Node.js", "Manages hotel bookings and availability")
-        Container(auth_service, "Authentication Service", "OAuth2/OpenID", "Handles user authentication and sessions")
-    }
-    Deployment_Node(notification, "Notification Service") {
-        Container(notification_service, "Notification Service", "Python", "Sends booking confirmations and alerts")
-    }
-}
-
-Deployment_Node(data, "Data Tier", "AWS RDS/DynamoDB") {
-    Deployment_Node(databases, "Database Cluster") {
-        ContainerDb(user_db, "User Database", "Amazon RDS", "Stores user information")
-        ContainerDb(booking_db, "Booking Database", "Amazon RDS", "Stores booking details and hotel availability")
-    }
-}
-
-Deployment_Node(storage, "Storage Tier", "Global") {
-    Deployment_Node(object_storage, "Object Storage") {
-        Container(hotel_images, "Hotel Images", "Amazon S3", "Stores hotel images and related static assets")
-    }
-}
-
-Deployment_Node(monitoring, "Monitoring and Security") {
-    Container(logging, "Logging", "AWS CloudWatch", "Captures application logs for debugging and monitoring")
-    Container(metrics, "Metrics", "Prometheus/Grafana", "Monitors system performance and usage")
-    Container(security, "Web Application Firewall (WAF)", "AWS WAF", "Protects against malicious requests")
-}
-
-Rel(web, api_gateway, "Sends requests", "HTTPS")
-Rel(app, api_gateway, "Sends requests", "HTTPS")
-Rel(api_gateway, auth_service, "Authenticates users", "OAuth2")
-Rel(api_gateway, booking_service, "Manages bookings", "REST")
-Rel(booking_service, booking_db, "Reads/Writes", "SQL")
-Rel(booking_service, user_db, "Reads/Writes", "SQL")
-Rel(notification_service, booking_db, "Fetches booking details", "SQL")
-Rel(notification_service, user_db, "Fetches user details", "SQL")
-Rel(notification_service, client, "Sends notifications", "SMTP")
-
-' Error Handling Relationships
-Rel(api_gateway, logging, "Logs errors and invalid requests", "HTTPS")
-Rel(api_gateway, security, "Protects against request floods and malicious inputs", "WAF Rules")
-Rel(booking_service, logging, "Logs backend errors", "HTTPS")
-@enduml
-```
-
----
-
-# 4. Component diagram
+# 3. Component diagram
 
 ### i) Customer Features
 ### a) Booking a Hotel
@@ -241,3 +172,73 @@ hotelService --> portal : Sends inventory data
 
 @enduml
 ```
+---
+# 4. Deployment diagram
+
+A deployment diagram for the OYO Booking System illustrates the physical architecture of the system, showing how different components are deployed across nodes. The diagram includes key tiers such as the "Client Tier" with web and mobile apps, the "API Tier" with services like API Gateway and Booking Service, and the "Data Tier" with databases for user and booking data. Each node represents a physical or virtual machine, while connections show communication between components. This diagram provides a detailed view of the system's infrastructure, aiding developers and architects in understanding its deployment.
+![deploymentdiagram](https://github.com/user-attachments/assets/8dffd558-18fc-4ba2-94dd-074d6c7f509c)
+```
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml
+
+LAYOUT_WITH_LEGEND()
+title Deployment Diagram - OYO Booking System
+
+Deployment_Node(client, "Client Tier", "User Devices") {
+    Deployment_Node(browser, "Web Browser") {
+        Container(web, "Web App", "React", "Allows users to search and book hotels")
+    }
+    Deployment_Node(mobile, "Mobile Device") {
+        Container(app, "Mobile App", "React Native", "Provides hotel search and booking on the go")
+    }
+}
+
+Deployment_Node(api, "API Tier", "AWS ECS/Kubernetes") {
+    Deployment_Node(api_cluster, "API Cluster", "Load Balanced") {
+        Container(api_gateway, "API Gateway", "Express.js", "Handles incoming requests and routing")
+        Container(booking_service, "Booking Service", "Node.js", "Manages hotel bookings and availability")
+        Container(auth_service, "Authentication Service", "OAuth2/OpenID", "Handles user authentication and sessions")
+    }
+    Deployment_Node(notification, "Notification Service") {
+        Container(notification_service, "Notification Service", "Python", "Sends booking confirmations and alerts")
+    }
+}
+
+Deployment_Node(data, "Data Tier", "AWS RDS/DynamoDB") {
+    Deployment_Node(databases, "Database Cluster") {
+        ContainerDb(user_db, "User Database", "Amazon RDS", "Stores user information")
+        ContainerDb(booking_db, "Booking Database", "Amazon RDS", "Stores booking details and hotel availability")
+    }
+}
+
+Deployment_Node(storage, "Storage Tier", "Global") {
+    Deployment_Node(object_storage, "Object Storage") {
+        Container(hotel_images, "Hotel Images", "Amazon S3", "Stores hotel images and related static assets")
+    }
+}
+
+Deployment_Node(monitoring, "Monitoring and Security") {
+    Container(logging, "Logging", "AWS CloudWatch", "Captures application logs for debugging and monitoring")
+    Container(metrics, "Metrics", "Prometheus/Grafana", "Monitors system performance and usage")
+    Container(security, "Web Application Firewall (WAF)", "AWS WAF", "Protects against malicious requests")
+}
+
+Rel(web, api_gateway, "Sends requests", "HTTPS")
+Rel(app, api_gateway, "Sends requests", "HTTPS")
+Rel(api_gateway, auth_service, "Authenticates users", "OAuth2")
+Rel(api_gateway, booking_service, "Manages bookings", "REST")
+Rel(booking_service, booking_db, "Reads/Writes", "SQL")
+Rel(booking_service, user_db, "Reads/Writes", "SQL")
+Rel(notification_service, booking_db, "Fetches booking details", "SQL")
+Rel(notification_service, user_db, "Fetches user details", "SQL")
+Rel(notification_service, client, "Sends notifications", "SMTP")
+
+' Error Handling Relationships
+Rel(api_gateway, logging, "Logs errors and invalid requests", "HTTPS")
+Rel(api_gateway, security, "Protects against request floods and malicious inputs", "WAF Rules")
+Rel(booking_service, logging, "Logs backend errors", "HTTPS")
+@enduml
+```
+
+---
+
