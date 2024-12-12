@@ -168,7 +168,8 @@ Rel(booking_service, logging, "Logs backend errors", "HTTPS")
 
 ### i) Customer Features
 ### a) Booking a Hotel
-![Booking a Hotel](<https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/Assets/booking_a_hotel.png>)
+![booking_a_hotel](https://github.com/user-attachments/assets/921ee62c-b86b-4d10-8f5b-adf5e5e130c1)
+
 ```
 @startuml
 title Customer Features - Booking a Hotel
@@ -193,7 +194,9 @@ bookingService --> app : Confirms booking
 ```
 
 ### b) Reviewing a Stay
-![Reviewing a Stay](<https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/Assets/reviewing_a_stay.png>)
+![managing_hotels](https://github.com/user-attachments/assets/ba31ed19-ac5a-4f11-90e2-32b930872471)
+
+
 ```
 @startuml
 title Customer Features - Reviewing a Stay
@@ -212,7 +215,8 @@ reviewService --> app : Confirms review submission
 ```
 
 ### ii) Admin Features
-![Admin Features](<https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/Assets/managing_hotels.png>)
+![reviewing_a_stay](https://github.com/user-attachments/assets/f0538108-8bff-429d-95db-665905846edf)
+
 ```
 @startuml
 title Admin Features - Managing Hotels
