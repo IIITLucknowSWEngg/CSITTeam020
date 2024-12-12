@@ -1,4 +1,8 @@
-# Container diagram
+#   C4 Diagrams
+
+## Reference :- https://www.geeksforgeeks.orgsystem-design-netflix-a-complete-architecture/
+
+# 1. Container diagram
 
 A container diagram for an OYO booking system shows the software containers that make up the system. The main containers
 are the "Web Frontend," "Booking Service," "Payment Service," and "Database." The "Web Browser" interacts with the "Web
@@ -52,7 +56,7 @@ Rel(bookingService, inventorySystem, "Updates room availability", "API")
 
 --- 
 
-# Context diagram
+# 2. Context diagram
 
 A context diagram for an OYO booking system illustrates its interactions with external entities. The main system is
 the "OYO Booking System," surrounded by entities such as "Customer," "Payment Gateway," "Hotel," and "Inventory System."
@@ -91,7 +95,7 @@ Rel(oyoBookingSystem, reviewSystem, "Manages customer feedback", "API")
 
 ---
 
-# Deployment diagram
+# 3. Deployment diagram
 
 A deployment diagram for the OYO Booking System illustrates the physical architecture of the system, showing how different components are deployed across nodes. The diagram includes key tiers such as the "Client Tier" with web and mobile apps, the "API Tier" with services like API Gateway and Booking Service, and the "Data Tier" with databases for user and booking data. Each node represents a physical or virtual machine, while connections show communication between components. This diagram provides a detailed view of the system's infrastructure, aiding developers and architects in understanding its deployment.
 ![deploymentdiagram](https://github.com/user-attachments/assets/8dffd558-18fc-4ba2-94dd-074d6c7f509c)
@@ -158,3 +162,79 @@ Rel(booking_service, logging, "Logs backend errors", "HTTPS")
 @enduml
 ```
 
+---
+
+# 4. Deployment diagram
+
+### i) Customer Features
+### a) Booking a Hotel
+![Booking a Hotel](<https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/Assets/booking_a_hotel.png>)
+```
+@startuml
+title Customer Features - Booking a Hotel
+
+actor Customer as customer
+entity "OYO Web/Mobile App" as app
+control "Booking Service" as bookingService
+database "Booking Database" as bookingDb
+database "Hotel Inventory System" as inventorySystem
+
+customer -> app : Searches hotels
+app -> bookingService : Sends search request
+bookingService -> inventorySystem : Retrieves available hotels
+inventorySystem --> bookingService : Sends available hotel data
+bookingService --> app : Sends search results
+customer -> app : Selects a hotel and books it
+app -> bookingService : Sends booking request
+bookingService -> bookingDb : Stores booking details
+bookingService --> app : Confirms booking
+
+@enduml
+```
+
+### b) Reviewing a Stay
+![Reviewing a Stay](<https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/Assets/booking_a_hotel.png>)
+```
+@startuml
+title Customer Features - Reviewing a Stay
+
+actor Customer as customer
+entity "OYO Web/Mobile App" as app
+control "Review Service" as reviewService
+database "Review Database" as reviewDb
+
+customer -> app : Selects a past stay
+app -> reviewService : Submits review and rating
+reviewService -> reviewDb : Stores review data
+reviewService --> app : Confirms review submission
+
+@enduml
+```
+
+### ii) Admin Features
+![Admin Features](<https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/Assets/booking_a_hotel.png>)
+```
+@startuml
+title Admin Features - Managing Hotels
+
+actor Admin as admin
+entity "OYO Admin Portal" as portal
+control "Hotel Management Service" as hotelService
+database "Hotel Database" as hotelDb
+
+admin -> portal : Logs in to admin portal
+portal -> hotelService : Sends login credentials
+hotelService --> portal : Confirms login
+
+admin -> portal : Adds/updates hotel details
+portal -> hotelService : Sends hotel details
+hotelService -> hotelDb : Updates hotel database
+hotelService --> portal : Confirms update
+
+admin -> portal : Views hotel inventory
+portal -> hotelService : Requests inventory data
+hotelService -> hotelDb : Retrieves inventory details
+hotelService --> portal : Sends inventory data
+
+@enduml
+```
