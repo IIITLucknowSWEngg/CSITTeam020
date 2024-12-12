@@ -119,3 +119,7 @@ impacted by it, but their involvement may not be immediately apparent or recogni
 > tourism practices. They have a vested interest in the impact of the OYO booking system on the environment, such as
 > through its use of energy, water, or other resources, as well as in its promotion of sustainable travel options or
 > eco-friendly hotels.
+
+
+# chatgpt prompt used : 
+Refine stakeholder roles and responsibilities for a GitHub README, ensuring clear and professional formatting
