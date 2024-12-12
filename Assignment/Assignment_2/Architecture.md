@@ -1,6 +1,5 @@
 #   C4 Diagrams
 
-## Reference :- https://www.geeksforgeeks.orgsystem-design-netflix-a-complete-architecture/
 
 # 1. Container diagram
 
