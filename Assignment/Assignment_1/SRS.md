@@ -6,7 +6,7 @@
 This SRS document outlines the functional and non-functional requirements for the OYO hotel booking system. It aligns closely with the user needs outlined in the URD, ensuring efficient development, testing, and stakeholder satisfaction.
 
 ### 1.2 Scope
-The OYO clone allows customers to search and book hotel rooms while enabling hotel managers to manage inventory, bookings, and customer interactions. Key features include secure payments, real-time updates, notifications, and reporting. The document follows the cross-referenced URD to maintain consistency.
+The OYO allows customers to search and book hotel rooms while enabling hotel managers to manage inventory, bookings, and customer interactions. Key features include secure payments, real-time updates, notifications, and reporting. The document follows the cross-referenced URD to maintain consistency.
 
 ### 1.3 Definitions, Acronyms, and Abbreviations
 - **URD**: User Requirements Document
