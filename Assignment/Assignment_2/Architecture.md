@@ -164,7 +164,7 @@ Rel(booking_service, logging, "Logs backend errors", "HTTPS")
 
 ---
 
-# 4. Deployment diagram
+# 4. Component diagram
 
 ### i) Customer Features
 ### a) Booking a Hotel
