@@ -1,4 +1,4 @@
-// **Feature: User Registration**
+**Feature: User Registration**
 
 | **Test ID**    | **TC-REG-001**                                               |
 |----------------|--------------------------------------------------------------|
@@ -26,7 +26,7 @@ describe('OYO User Registration', function() {
 
 ---
 
-// **Feature: User Login**
+**Feature: User Login**
 
 | **Test ID**    | **TC-LOG-001**                                               |
 |----------------|--------------------------------------------------------------|
@@ -54,7 +54,7 @@ describe('OYO User Login', function() {
 
 ---
 
-// **Feature: Room Booking**
+**Feature: Room Booking**
 
 | **Test ID**    | **TC-RB-001**                                               |
 |----------------|--------------------------------------------------------------|
@@ -84,7 +84,7 @@ describe('OYO Room Booking', function() {
 
 ---
 
-// **Feature: Payment Processing**
+**Feature: Payment Processing**
 
 | **Test ID**    | **TC-PP-001**                                               |
 |----------------|--------------------------------------------------------------|
@@ -112,7 +112,7 @@ describe('OYO Payment Processing', function() {
 
 ---
 
-// **Feature: Booking Status Update**
+**Feature: Booking Status Update**
 
 | **Test ID**    | **TC-BSU-001**                                              |
 |----------------|-------------------------------------------------------------|
@@ -138,7 +138,7 @@ describe('OYO Booking Status Update', function() {
 
 ---
 
-// **Feature: User Profile Management**
+**Feature: User Profile Management**
 
 | **Test ID**    | **TC-UPM-001**                                               |
 |----------------|--------------------------------------------------------------|
@@ -164,7 +164,7 @@ describe('OYO User Profile Management', function() {
 
 ---
 
-// **Feature: Room Check-Out**
+**Feature: Room Check-Out**
 
 | **Test ID**    | **TC-RCO-001**                                               |
 |----------------|-------------------------------------------------------------|
@@ -188,3 +188,6 @@ describe('OYO Room Check-Out', function() {
     expect(checkOutPage.getReceipt()).to.include('Payment successfully processed');
   });
 });
+
+
+
