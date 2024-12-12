@@ -193,7 +193,7 @@ bookingService --> app : Confirms booking
 ```
 
 ### b) Reviewing a Stay
-![Reviewing a Stay](<https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/Assets/booking_a_hotel.png>)
+![Reviewing a Stay](<https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/Assets/reviewing_a_stay.png>)
 ```
 @startuml
 title Customer Features - Reviewing a Stay
@@ -212,7 +212,7 @@ reviewService --> app : Confirms review submission
 ```
 
 ### ii) Admin Features
-![Admin Features](<https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/Assets/booking_a_hotel.png>)
+![Admin Features](<https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/Assets/managing_hotels.png>)
 ```
 @startuml
 title Admin Features - Managing Hotels
