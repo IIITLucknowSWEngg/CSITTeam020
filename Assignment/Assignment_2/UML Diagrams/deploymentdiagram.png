@@ -1,1 +1,8 @@
+```
+---
 
+# Deployment diagram
+
+A deployment diagram for the OYO Booking System illustrates the physical architecture of the system, showing how different components are deployed across nodes. The diagram includes key tiers such as the "Client Tier" with web and mobile apps, the "API Tier" with services like API Gateway and Booking Service, and the "Data Tier" with databases for user and booking data. Each node represents a physical or virtual machine, while connections show communication between components. This diagram provides a detailed view of the system's infrastructure, aiding developers and architects in understanding its deployment.
+![deploymentdiagram](https://github.com/user-attachments/assets/8dffd558-18fc-4ba2-94dd-074d6c7f509c)
+```
