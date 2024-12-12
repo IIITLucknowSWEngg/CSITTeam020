@@ -169,7 +169,8 @@ The diagram details the step-by-step flow for each interaction, representing the
 
 This diagram highlights the fundamental interactions and processes that enable seamless room booking and management for both guests and hosts within the Oyo system.
 
-![happypathdiagram](https://github.com/user-attachments/assets/549540a9-3f1d-46b1-a2eb-1eaab0f55269)
+
+![usecase](https://github.com/user-attachments/assets/0e764235-8369-40e3-aade-ced367dc3671)
 
 
 
