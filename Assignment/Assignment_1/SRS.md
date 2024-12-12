@@ -150,7 +150,7 @@ The OYO system is a web-based and mobile application integrating third-party ser
 ## 7. Appendices
 
 - **Appendix A:** Diagrams (System Architecture, Use Case Diagrams)  
-- **Appendix B:** [Cross Reference Matrix(https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/crossReferenceMatrix.md) 
+- **Appendix B:** [Cross Reference Matrix](https://github.com/IIITLucknowSWEngg/CSITTeam020/blob/main/Assignment/Assignment_2/crossReferenceMatrix.md) 
 ---
 
 
