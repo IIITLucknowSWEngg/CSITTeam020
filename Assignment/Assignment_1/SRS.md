@@ -161,12 +161,12 @@ Below is the Use Case Diagram for the happy path of the Oyo clone application. I
 
 The diagram details the step-by-step flow for each interaction, representing the standard sequence of actions without any exception handling (happy path):
 
-## Actors:
-Guest: Registers, searches for rooms, books accommodations, makes payments, and provides reviews.
+-- Actors:
+  - Guest: Registers, searches for rooms, books accommodations, makes payments, and provides reviews.
 
-Host: Manages property details, availability, pricing, and handles booking requests.
+  - Host: Manages property details, availability, pricing, and handles booking requests.
 
-Admin: Oversees platform operations, manages users, monitors transactions, and accesses analytics.
+  - Admin: Oversees platform operations, manages users, monitors transactions, and accesses analytics.
 
 
 This diagram highlights the fundamental interactions and processes that enable seamless room booking and management for both guests and hosts within the Oyo system.
@@ -177,6 +177,13 @@ This diagram highlights the fundamental interactions and processes that enable s
 ---
 
 ### ABUSE CASE DIAGRAM
+
+-- Actors:
+  -Attacker: Engages in sophisticated exploits, such as SQL injection, Cross-Site Scripting (XSS), or phishing attempts, which lead to trust loss and data breaches.
+  -Malicious Host: Posts unauthorized property listings, generates fake reviews to manipulate rankings, or engages in payment fraud.
+  -Fraudulent User: Creates fake bookings, abuses shared credentials, or performs automated actions that lead to revenue loss.
+  -Bot Network: Exploits APIs, scrapes property metadata, floods the system with irrelevant content, or causes performance degradation.
+
 ![abusecase](https://github.com/user-attachments/assets/c00378f7-1dc5-4c5f-b233-a37779cfb132)
 
 
