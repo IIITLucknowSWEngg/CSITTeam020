@@ -251,8 +251,7 @@ This Software Design Description outlines the architecture, modules, database sc
 
 
 ###  Oyo Design reference : https://bytegoblin.io/blog/system-design-architecture-for-hotel-booking-apps-like-airbnb-oyo.mdx
-### 1)System design reference : [https://www.geeksforgeeks.org/system-design-of-uber-app-uber-system-architecture/
-](https://medium.com/nerd-for-tech/system-design-architecture-for-hotel-booking-apps-like-airbnb-oyo-6efb4f4dddd7)
+### 1)System design reference :https://medium.com/nerd-for-tech/system-design-architecture-for-hotel-booking-apps-like-airbnb-oyo-6efb4f4dddd7)
 
 ## Chatgpt prompt
 Create a Software Design Description (SDD) outline for a platform that connects service providers with customers.
