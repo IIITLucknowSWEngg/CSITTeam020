@@ -87,8 +87,6 @@ The system operates across Android, iOS, and web platforms, supported by a scala
 
  Caching search results and frequently accessed data.
  
--![database pmg](https://github.com/user-attachments/assets/a0a8ce63-90b6-42d3-affa-2e49febdcc99)
-
 
 ---
 
@@ -220,6 +218,9 @@ The central entry point for all frontend requests, forwarding them to appropriat
 #### Payments
 
 - **Attributes**: PaymentID, BookingID, Amount, PaymentStatus, PaymentDate
+
+-![database pmg](https://github.com/user-attachments/assets/a0a8ce63-90b6-42d3-affa-2e49febdcc99)
+
 
 ---
 
