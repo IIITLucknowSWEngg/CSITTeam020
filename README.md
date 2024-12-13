@@ -52,7 +52,7 @@ This project is aimed at creating a seamless experience for both users and hotel
 
 ---
 # Viva Screenshot
-![1733668649584]()
+![1733668649584](Screenshot%202024-12-12%20220841.png)
 ---
 
 ## 💡 Team Idea
