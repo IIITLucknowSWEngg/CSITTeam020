@@ -96,81 +96,94 @@ Rel(bookingService, inventorySystem, "Updates room availability", "API")
 ---
 # 3. Component diagram
 
-### i) Customer Features
-### a) Booking a Hotel
-![booking_a_hotel](https://github.com/user-attachments/assets/921ee62c-b86b-4d10-8f5b-adf5e5e130c1)
+### i) User Features
+![User Features](https://www.planttext.com/api/plantuml/png/RPDDRjim48Nt0dI7WHR9AXVe8WXerOO1rp4aTD7bH1uxH2JI86adldrcI3aXs-v4plSUvqzFFg0BvscigtjOsEba3Pa0hSQZmmaEri5lJmwMXE7io8Cz01fu_lCSQGewM5TNTUNVj3cXQ8QRIn-k8u6Z8Q0vZYJKFVpy2EGCZj6shd1WFJHoQ03zV5iau-lgovB9DMpmUgFNHQmdTCChtC5IZ_mAzEGkUg28zik-O9MrdF6nO5I9xF0woSSA0xtZDIAxLO5qn0U6zXYqDOLPLvfjRT07FVpBRVk_72-QtZqNqJ5hZhuq5LVfJei1Nz0JDsS_VxBMsWassYTTgvAaLJbpgtkEgZ8QPtrBOKOMqK4UxMYC-VjNVUA7pm8_F3po6E07D6l3FUTv-gQk-4O2t7I9fBdmyg3Pmo7EneFZP3DKHV8NlZ7sadBCehkLH7VE3kIvQ3YbqMH45_Ky3z8N1bmnc8pRbfp9nfAx9RiDOJAB3MdArlE66iFBBSgwabAZibMYN5A85KkLiAU0UXIzIf1AKC-x_rrkXd6v6VRViYL3OHPTuJMd6ZljqWB5j9-u5V4l_mG0)
 
 ```
 @startuml
-title Customer Features - Booking a Hotel
+' Component Diagram for User Features of an OYO Competitor
 
-actor Customer as customer
-entity "OYO Web/Mobile App" as app
-control "Booking Service" as bookingService
-database "Booking Database" as bookingDb
-database "Hotel Inventory System" as inventorySystem
+skinparam componentStyle rectangle
 
-customer -> app : Searches hotels
-app -> bookingService : Sends search request
-bookingService -> inventorySystem : Retrieves available hotels
-inventorySystem --> bookingService : Sends available hotel data
-bookingService --> app : Sends search results
-customer -> app : Selects a hotel and books it
-app -> bookingService : Sends booking request
-bookingService -> bookingDb : Stores booking details
-bookingService --> app : Confirms booking
+' External User
+actor "User" as User
 
-@enduml
-```
+' Components
+component "UI Layer" as UI
+component "Search & Filter Service" as SFS
+component "Booking Service" as BS
+component "Payment Gateway" as PG
+component "Recommendation Service" as RS
+component "Notification Service" as NS
+component "Reviews & Ratings Service" as RRS
 
-### b) Reviewing a Stay
-![managing_hotels](https://github.com/user-attachments/assets/ba31ed19-ac5a-4f11-90e2-32b930872471)
+' Databases
+database "Room Listings DB" as RDB
+database "Booking DB" as BDB
+database "User Reviews DB" as CRDB
 
+' Relationships
+user --> UI : "Interacts"
+UI --> SFS : "Searches and filters rooms"
+UI --> BS : "Makes bookings"
+UI --> PG : "Processes payments"
+UI --> RS : "Receives recommendations"
+UI --> NS : "Receives notifications"
+UI --> RRS : "Leaves reviews"
 
-```
-@startuml
-title Customer Features - Reviewing a Stay
-
-actor Customer as customer
-entity "OYO Web/Mobile App" as app
-control "Review Service" as reviewService
-database "Review Database" as reviewDb
-
-customer -> app : Selects a past stay
-app -> reviewService : Submits review and rating
-reviewService -> reviewDb : Stores review data
-reviewService --> app : Confirms review submission
+' Database Connections
+SFS --> RDB : "Fetches room details"
+BS --> BDB : "Stores booking details"
+PG --> BDB : "Processes payments"
+RRS --> CRDB : "Stores reviews and ratings"
 
 @enduml
+
 ```
 
 ### ii) Admin Features
-![reviewing_a_stay](https://github.com/user-attachments/assets/f0538108-8bff-429d-95db-665905846edf)
+![Admin Features](https://www.planttext.com/api/plantuml/png/TPD1R-CW48NlblmVHhdqLFNUGrLJDwSsbM9vfJrEx4c2QaC4atRpxtV0E36LUZBYVS1xp_3i6HsVnw4ixk35ZYTho33K6WyEHzXR1rK_QWDhGZuxyc3tW0O-_dx0oo1mMPI5_zJcX87lvXqQlWm4ZZf6SnWYTGUl_vYSmG6gZgqh2mmVMCK3Le0UC8mczkh5byLrryH2ZVwui-ZwkAggCsHhxGZlQF10OvXeo7tfZYAwVMyojlNaVcFR7wooLd8UViFL3xoIe1VMdS-eAeSsblLUTyZQcepRD5CDDJBkq9EqqATXIlYcFOiT3xMQejLgoSHaIMfpQGwIL1NKSDQMXcZ47_L9pei_0-xldwHWU9H0NKTUdApAGYR2lBGPXAaG3oxOwebH3mkepQ6p-5geAbTtaxK5K4NzZwPlkHvpfJTv4-M6JE_1BCeCoB8_kK_6o6qCKba4up50hMAollSFhxrc_r3JG3nd6LB5ibURLhHfHUeYnbbaLWbJ4zQUfFLRB937nkTKOUPWJTmThnMAvnkXScBUAeVQ78gkv7NfBysNsCIpD1HV-Ny0)
 
 ```
 @startuml
-title Admin Features - Managing Hotels
+' Component Diagram for Admin Features of an OYO Clone
 
-actor Admin as admin
-entity "OYO Admin Portal" as portal
-control "Hotel Management Service" as hotelService
-database "Hotel Database" as hotelDb
+skinparam componentStyle rectangle
 
-admin -> portal : Logs in to admin portal
-portal -> hotelService : Sends login credentials
-hotelService --> portal : Confirms login
+' External Actor
+actor "Admin" as admin
 
-admin -> portal : Adds/updates hotel details
-portal -> hotelService : Sends hotel details
-hotelService -> hotelDb : Updates hotel database
-hotelService --> portal : Confirms update
+' Components
+component "Admin Dashboard" as AD
+component "Room Management Service" as RMS
+component "User Management Service" as UMS
+component "Booking Management Service" as BMS
+component "Analytics Service" as AS
+component "Notification Service" as NS
 
-admin -> portal : Views hotel inventory
-portal -> hotelService : Requests inventory data
-hotelService -> hotelDb : Retrieves inventory details
-hotelService --> portal : Sends inventory data
+' Databases
+database "Room Listings DB" as RDB
+database "User DB" as UDB
+database "Booking DB" as BDB
+
+' Relationships
+admin --> AD : "Accesses"
+AD --> RMS : "Manages room details"
+AD --> UMS : "Manages users"
+AD --> BMS : "Manages bookings"
+AD --> AS : "Views analytics"
+AD --> NS : "Sends notifications"
+
+' Database Connections
+RMS --> RDB : "Adds/Edits/Deletes room listings"
+UMS --> UDB : "Accesses user details"
+BMS --> BDB : "Updates booking statuses"
+AS --> RDB : "Fetches room data"
+AS --> BDB : "Fetches booking data"
+AS --> UDB : "Fetches user activity"
 
 @enduml
+
 ```
 ---
 # 4. Deployment diagram
