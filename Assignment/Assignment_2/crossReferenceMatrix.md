@@ -1,45 +1,14 @@
-# Cross-Reference Matrix for OYO Competitor
+# Cross Reference Matrix for OYO Competitor
 
-## Stakeholder Mapping to SRS and URD Sections
-
-| Stakeholder         | SRS Section                            | URD Section                             |
-|---------------------|----------------------------------------|-----------------------------------------|
-| **Customers**       | 2.3 User Classes and Characteristics   | 2.1 Customers                           |
-|                     | 3.2 Room Search and Filtering          | 3.2 Search and Filters                  |
-|                     | 3.3 Booking Process                   | 3.3 Booking Process                     |
-| **Hotel Partners**  | 2.3 User Classes and Characteristics   | 2.2 Hotel Partners                      |
-|                     | 3.5 Room Listings and Descriptions    | 3.6 API Integration                     |
-|                     | 5.2 Security Requirements             | 4.2 Security                            |
-| **Admins**          | 2.3 User Classes and Characteristics   | 3.6 API Integration                     |
-|                     | 5.4 Scalability                       | 4.4 Scalability                         |
-| **Payment Gateway** | 4.3 Software Interfaces                | 3.4 Payment Integration                 |
-| **Maps API**        | 4.3 Software Interfaces                | 3.2 Search and Filters                  |
-| **SMS Gateway**     | 4.3 Software Interfaces                | 3.5 Notifications                       |
-| **Cloud Hosting**   | 5.3 Availability and Reliability       | 4.5 Reliability                         |
-|                     | 5.4 Scalability                       | 4.4 Scalability                         |
-
----
-
-## Functional Requirement Mapping to SRS and URD Sections
-
-| Feature                          | SRS Section                                  | URD Section                                   |
-|-----------------------------------|----------------------------------------------|-----------------------------------------------|
-| **User Registration and Login**   | 3.1 User Registration and Authentication     | 3.1 User Registration and Login              |
-| **Room Search and Filtering**     | 3.2 Room Search and Filtering                | 3.2 Search and Filters                       |
-| **Booking Process**               | 3.3 Booking Process                         | 3.3 Booking Process                          |
-| **Payment Processing**            | 3.4 Payment Processing                      | 3.4 Payment Integration                      |
-| **Room Listings and API**         | 3.5 Room Listings and Descriptions          | 3.6 API Integration                          |
-| **Notifications**                 | 4.2 Communication Interfaces                | 3.5 Notifications                            |
-| **System Scalability**            | 5.4 Scalability                              | 4.4 Scalability                              |
-
----
-
-## Non-Functional Requirements Mapping
-
-| Non-Functional Requirement         | SRS Section                                  | URD Section                                   |
-|------------------------------------|----------------------------------------------|-----------------------------------------------|
-| **Performance**                    | 5.1 Performance Requirements                 | 4.1 Performance                              |
-| **Security**                       | 5.2 Security Requirements                    | 4.2 Security                                 |
-| **Availability & Reliability**     | 5.3 Availability and Reliability             | 4.5 Reliability                              |
-| **Scalability**                    | 5.4 Scalability                              | 4.4 Scalability                              |
-| **Localization**                   | 5.5 Usability                                | 4.6 Localization                             |
+| **Stakeholder**   | **URD Section Number** | **URD Topic**                | **SRS Section Number** | **SRS Topic**                | **Architecture Section** | **Architecture Topic**        | **Design Sec Number** | **Design Topic**              | **Test Sec Number** | **Test Topics**                     |
+|-------------------|------------------------|------------------------------|------------------------|------------------------------|--------------------------|--------------------------------|------------------------|----------------------------------|----------------------|-------------------------------------|
+| **Users**         | 4.1                    | User Registration & Authentication | 3.1                    | User Authentication and Management | 3 i)                   | User Features                  | 3.1.2                  | Authentication Module             | 1.1                  | User - Sign In & Register            |
+| **Users**         | 4.2                   | Hotel Search and Discovery          | 3.2                   | Room Search and Filtering    | 3 i)                 | User Features                  | 3.1.2                  | Search Module                     | 1.2                  | User - Search for Rooms              |
+| **Users**         | 4.3                    | Room Booking                  | 3.3                    | Booking and Reservation Management               | 3 i)                   | User Features                  | 3.1.2                  | Booking & Payment Module          | 1.3                  | User - Book Room                    |
+| **Users**         | 4.5                    | Review and Rating System              | 3.6                    | Reviews and Ratings           | 3 i)                   | User Features                  | 3.2.5                  | Review and Rating System           | 1.4                  | User - Rate Room                    |
+| **Owners**        | 4.4                    | Property  Management | 3.2                    | Property Management           | 3 ii)                   | Admin Features                 | 3.2.3                  | Property Management Service        | 2.1                  | Owner - Add Property                |
+| **Owners**        | 4.6                    | Admin Panel                   | 3.7                    | Analytics & Insights          | 3 ii)                   | Admin Features                 | 3.3.1                  | Admin Panel and Monitoring         | 2.2                  | Owner - View Analytics              |
+| **NFRs**          | 5.1                    | Scalability                   | 5.4                    |System Scalability      | 2                      | Container Diagrams             | 6.2                    | Scalability Testing               | 3.4                  | Scalability Tests                   |
+| **NFRs**          | 5.2                    | Security                      | 5.2                    | Security Requirements         | 2                       | Container Diagrams             | 6.4                    | Security Testing                  | 3.2                  | Security Tests                      |
+| **NFRs**          | 5.3                    | Performance                   | 5.1                    | Performance Requirements      | 2                        | Container Diagrams             | 6.1                    | Performance Testing               | 3.1                  | Performance Tests                   |
+| **NFRs**          | 5.4                    | Usability                     | 5.3                    | Availability and Reliability        | 2                      | Container Diagrams             | 6.3                    | Usability Testing                 | 3.3                  | Usability Tests                     |
