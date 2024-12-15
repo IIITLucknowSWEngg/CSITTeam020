@@ -1,127 +1,103 @@
 # User Requirements Document (URD) for OYO Competitor
 
 ## 1. Introduction
+OYO Clone is a hotel booking platform that enables users to search, compare, and book accommodations. This document outlines the functional and non-functional requirements to ensure an optimal user experience for all stakeholders.
 
-### 1.1 Purpose
-This document outlines the user requirements for developing an OYO competitor. It serves as the primary reference for design, development, and testing, ensuring the platform meets the needs of both end-users (customers) and hotel partners (admins). The document includes functional and non-functional requirements.
+## 2. Purpose
+The purpose of this URD is to define the core features and functionalities of the OYO Clone to ensure it meets user needs effectively.
 
-### 1.2 Scope
-The OYO competitor is a hotel booking platform that allows users to search for and book rooms, view room details and reviews, and manage their bookings. Hotel partners can register and list their properties, manage availability, and oversee bookings. The platform will be accessible via web and mobile, offering features like secure payments, receipt downloads, and 24/7 support.
+## 3. User Types
 
-### 1.3 Definitions, Acronyms, and Abbreviations
-- **Users/Customers**: Individuals booking rooms via the platform.
-- **Hotel Partners**: Businesses listing their properties for booking.
-- **Admins**: System operators managing listings, users, and the platform.
-- **SSO**: Single Sign-On for easy account creation/login.
-- **API**: Application Programming Interface for integrations (e.g., payment gateway).
-- **OTP**: One-Time Password for user verification.
+### 3.1. Guest
+**Description**: A Guest is a user who searches for and books accommodations.
+**Main Tasks**:
+- As a Guest, I want to search for hotels by location, check-in/out dates, price range, and amenities.
+- I want to view hotel details, photos, and guest reviews before making a booking.
+- I want a secure payment gateway for completing transactions.
+- I want the ability to manage my bookings, including cancellations and modifications.
 
-### 1.4 References
-- User Interface Design Document
-- System Architecture Document
-- Software Requirements Specification (SRS)
+### 3.2. Hotel Partner
+**Description**: A Hotel Partner is a user who lists and manages properties on the platform.
+**Main Tasks**:
+- As a Hotel Partner, I want to list my property with details such as photos, amenities, room types, and prices.
+- I want to manage bookings, check availability, and update room prices in real time.
+- I need access to performance metrics like occupancy rates and revenue generation.
+- I want to respond to guest queries or reviews.
 
----
+### 3.3. Admin
+**Description**: An Admin is a platform administrator responsible for managing the platform and ensuring its smooth operation.
+**Main Tasks**:
+- As an Admin, I want tools to manage users, bookings, and properties effectively.
+- I need to monitor and resolve complaints, disputes, and flagged content.
+- I want access to analytics dashboards to track platform performance and identify areas for improvement.
 
-## 2. User Characteristics
+## 4. Functional Requirements
 
-### 2.1 Customers
-- **Demographics**: Individuals aged 18-50 with access to mobile or web platforms.
-- **Technical Knowledge**: Familiarity with booking platforms and online payments.
-- **User Needs**:
-  - Seamless room booking with accurate details.
-  - Secure payment options.
-  - Booking management, including cancellations and refunds.
-  - Assistance through 24/7 support.
+### 4.1. User Registration and Authentication
+**Description**: All users must be able to create and manage accounts.
+**Requirements**:
+- As a user, I want to register and log in using my email or phone number.
+- I need password recovery options via email or OTP.
+- I want to manage my profile with details like name, contact information, and preferences.
 
-### 2.2 Hotel Partners
-- **Demographics**: Hotels, guesthouses, and property owners.
-- **Technical Knowledge**: Basic knowledge of online platforms and room management tools.
-- **User Needs**:
-  - Easy listing and management of properties.
-  - Real-time updates on bookings and availability.
-  - Visibility into user reviews and feedback.
+### 4.2. Hotel Search and Discovery
+**Description**: Guests must be able to search and explore accommodations easily.
+**Requirements**:
+- As a Guest, I want to filter hotels by price, location, amenities, and reviews.
+- I want a map-based search option for viewing nearby properties.
+- I want personalized recommendations based on my previous bookings and preferences.
 
----
+### 4.3. Booking and Payment
+**Description**: Guests should be able to book accommodations and complete payments securely.
+**Requirements**:
+- As a Guest, I want real-time availability updates for rooms.
+- I want a secure payment gateway that supports multiple payment methods (credit card, UPI, wallets).
+- I should be able to download or email my booking confirmation.
 
-## 3. Functional Requirements
+### 4.4. Property Management
+**Description**: Hotel Partners must manage their listings efficiently.
+**Requirements**:
+- As a Hotel Partner, I want to update room availability and pricing.
+- I want to upload high-quality photos and manage property details.
+- I need notifications for new bookings or cancellations.
 
-### 3.1 User Registration and Login
-- **Description**: Users can register using an email, phone number, or SSO options. Hotel partners also register to list properties.
-- **Functional Requirements**:
-  - Email and phone verification with OTP.
-  - Password recovery through email or SMS.
-  - Support for secure SSO using Google or Facebook accounts.
+### 4.5. Review and Rating System
+**Description**: Users should be able to leave feedback to enhance trust and credibility.
+**Requirements**:
+- As a Guest, I want to rate and review hotels after my stay.
+- As a Hotel Partner, I want to respond to guest reviews to address concerns.
+- I want the platform to highlight verified reviews for credibility.
 
-### 3.2 Search and Filters
-- **Description**: Users can search for and book rooms based on location, dates, and preferences.
-- **Functional Requirements**:
-  - Filters for location, price, amenities, and ratings.
+### 4.6. Admin Panel
+**Description**: Admins require tools to oversee platform activities.
+**Requirements**:
+- As an Admin, I need tools to manage users, bookings, and hotel listings.
+- I want the ability to resolve disputes and complaints effectively.
+- I need access to detailed analytics to monitor performance metrics like bookings, cancellations, and revenue.
 
-### 3.3 Booking Process
-- **Description**: Users can manage bookings, including cancellations and refunds.
-- **Functional Requirements**:
-  - Confirmation emails and receipts for successful bookings.
-  - Easy cancellation with refund processing based on policy.
+## 5. Non-Functional Requirements
 
-### 3.4 Payment Integration
-- **Description**: Secure payment gateway integration for processing payments.
-- **Functional Requirements**:
-  - Support for major payment methods, including credit cards and wallets.
-  - Secure and encrypted transactions.
+### 5.1. Scalability
+- The platform must handle thousands of concurrent users with minimal downtime.
 
-### 3.5 Notifications
-- **Description**: Users receive notifications for important updates.
-- **Functional Requirements**:
-  - Booking confirmation, cancellations, and payment status.
-  - Multichannel notifications via email, SMS, and in-app alerts.
+### 5.2. Security
+- All user data, including payment information, must be encrypted and securely stored.
 
-### 3.6 API Integration
-- **Description**: Integration for property updates and analytics.
-- **Functional Requirements**:
-  - Enable third-party APIs for property synchronization.
-  - Support analytics tools for insights into booking trends.
+### 5.3. Performance
+- Search and booking processes must be fast, even during peak times.
 
----
+### 5.4. Usability
+- The interface must be intuitive and user-friendly for both guests and hotel partners.
 
-## 4. Non-Functional Requirements
+## 6. Glossary
+- **Guest**: A user who searches for and books accommodations.
+- **Hotel Partner**: A user who lists and manages properties on the platform.
+- **Admin**: A user responsible for managing platform content and resolving issues.
 
-### 4.1 Performance
-- Platform should handle up to 50,000 concurrent users with <2 seconds response time for searches.
+## 7. Future Enhancements
+- **Dynamic Pricing**: Implement AI-based price adjustments based on demand and seasonality.
+- **Loyalty Program**: Introduce reward points for frequent users.
+- **Multi-Language Support**: Add support for regional and international languages.
 
-### 4.2 Security
-- Data encryption with AES-256.
-- HTTPS for secure communication.
-- OTP for user verification.
-
-### 4.3 Usability
-- Intuitive interface for both users and hotel partners.
-- Responsive design for web and mobile compatibility.
-
-### 4.4 Scalability
-- Architecture designed for horizontal scaling to accommodate traffic surges.
-
-### 4.5 Reliability
-- 99.9% uptime with robust backup and recovery mechanisms.
-
-### 4.6 Localization
-- Support for multiple languages and region-specific content.
-
----
-
-## 5. Assumptions and Dependencies
-- Users have access to stable internet and compatible devices.
-- Integration with a reliable payment gateway.
-- Accurate property details and availability provided by hotel partners.
-
----
-
-## 6. Acceptance Criteria
-- All functional and non-functional requirements are met.
-- The platform passes performance and security tests.
-- User feedback during beta testing is incorporated.
-
----
-
-## 7. Conclusion
-This URD ensures the OYO competitor meets the needs of its target audience, providing a seamless, secure, and reliable hotel booking experience for both customers and hotel partners.
+## 8. Conclusion
+This URD outlines the foundational requirements for the OYO Clone, ensuring it meets the diverse needs of guests, hotel partners, and administrators. Regular updates will refine the platform based on evolving user expectations.
